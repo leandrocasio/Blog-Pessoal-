@@ -33,7 +33,7 @@ listaTemas: Tema[]
   cadastrar(){
     this.temaService.postTema(this.tema).subscribe((resp: Tema) =>{
       this.tema= resp
-      this.alertas.showAlertSuccess('Tema realizado com sucesso!')
+      this.alertas.showAlertSuccess('Tema cadastrado com sucesso!')
       this.findAllTemas();
       this.tema = new Tema()
     })
